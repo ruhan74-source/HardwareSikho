@@ -1816,7 +1816,57 @@ function toggleFavorite(imageId) {
 }
 
 
+// ==========================
+// Dark / light mode
+// ==========================
 
+const themeToggle =
+    document.getElementById("themeToggle");
+
+function applyTheme(theme) {
+
+    if (theme === "dark") {
+
+        document.body.classList.add("dark");
+        themeToggle.textContent = "☀️";
+
+    } else {
+
+        document.body.classList.remove("dark");
+        themeToggle.textContent = "🌙";
+
+    }
+
+}
+
+function getSavedTheme() {
+
+    try {
+        return localStorage.getItem("hs_theme") || "light";
+    } catch (error) {
+        return "light";
+    }
+
+}
+
+applyTheme(getSavedTheme());
+
+themeToggle.addEventListener("click", function () {
+
+    const isDark =
+        document.body.classList.contains("dark");
+
+    const newTheme = isDark ? "light" : "dark";
+
+    applyTheme(newTheme);
+
+    try {
+        localStorage.setItem("hs_theme", newTheme);
+    } catch (error) {
+        console.error(error);
+    }
+
+});
 
 // ==========================
 // Elements
