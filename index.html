@@ -1312,56 +1312,6 @@
             class="images"
             id="imageGallery">
 
-            <!-- Demo images -->
-
-            <div
-                class="image-card"
-                data-keywords="motherboard computer hardware technology">
-
-                <img
-                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600">
-
-                <p>Motherboard</p>
-
-            </div>
-
-
-            <div
-                class="image-card"
-                data-keywords="computer laptop hardware">
-
-                <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600">
-
-                <p>Computer</p>
-
-            </div>
-
-
-            <div
-                class="image-card"
-                data-keywords="programming computer technology">
-
-                <img
-                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600">
-
-                <p>Programming</p>
-
-            </div>
-
-
-            <div
-                class="image-card"
-                data-keywords="laptop computer hardware">
-
-                <img
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600">
-
-                <p>Laptop</p>
-
-            </div>
-
-
             <div
                 class="no-result"
                 id="noResult">
@@ -1867,6 +1817,7 @@ themeToggle.addEventListener("click", function () {
     }
 
 });
+
 
 // ==========================
 // Elements
@@ -4240,33 +4191,22 @@ viewerDownloadBtn.addEventListener("click", async function () {
 });
 
 
-/* Lock/unlock background page scrolling while the viewer is open */
-
-let viewerScrollY = 0;
+/* Lock/unlock background page scrolling while the viewer is open.
+   Simple overflow-hidden toggle — deliberately avoids the
+   position:fixed + scrollTo-restore trick, which can cause a visible
+   "jump" back to the wrong position on some Android browsers. */
 
 function lockBodyScroll() {
 
-    viewerScrollY = window.scrollY;
-
-    document.body.style.position = "fixed";
-    document.body.style.top = "-" + viewerScrollY + "px";
-    document.body.style.left = "0";
-    document.body.style.right = "0";
-    document.body.style.width = "100%";
+    document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
 
 }
 
 function unlockBodyScroll() {
 
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.left = "";
-    document.body.style.right = "";
-    document.body.style.width = "";
+    document.documentElement.style.overflow = "";
     document.body.style.overflow = "";
-
-    window.scrollTo(0, viewerScrollY);
 
 }
 
@@ -4317,4 +4257,4 @@ document.addEventListener("keydown", function(event) {
   
 </body>
 
-</html>
+    </html>
