@@ -1,0 +1,4249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="WFwZmlpFqJX8g_cBVKEukP_Y-2zYidj9XC0s8Y4Rz1M" />
+
+    <title>HardwareSikho — Computer Hardware Images (Motherboard, SATA, CPU, RAM)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Browse and search free computer hardware images — motherboards, SATA cables, CPUs, RAM, storage, keyboards, mice and more. Find the perfect hardware image quickly.">
+
+    <meta name="keywords" content="hardware images, SATA cable, motherboard image, computer hardware, CPU image, RAM image, PC parts photo">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#111111">
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="HardwareSikho">
+
+    <link rel="canonical" href="https://hardwaresikho.netlify.app/">
+
+    <!-- Open Graph (for social sharing previews) -->
+
+    <meta property="og:title" content="HardwareSikho — Computer Hardware Images">
+    <meta property="og:description" content="Browse and search free computer hardware images — motherboards, SATA cables, CPUs, RAM, storage and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hardwaresikho.netlify.app/">
+    <meta property="og:image" content="https://hardwaresikho.netlify.app/hero-image.jpg">
+
+    <!-- Favicon (inline SVG, no separate file needed) -->
+    <link rel="icon" type="image/png" href="/icon-192.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --accent: #111111;
+            --accent-dark: #000000;
+            --accent-light: #333333;
+            --gradient: linear-gradient(135deg, #222222 0%, #000000 100%);
+            --bg: #f8f8fb;
+            --surface: #ffffff;
+            --text: #1c1c28;
+            --text-muted: #6f6f85;
+            --border: #ececf3;
+            --radius: 14px;
+            --shadow-sm: 0 2px 10px rgba(30, 20, 60, 0.05);
+            --shadow-md: 0 10px 30px rgba(30, 20, 60, 0.10);
+            --shadow-lg: 0 20px 50px rgba(30, 20, 60, 0.16);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.35s ease, color 0.35s ease;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d8d8e6;
+            border-radius: 10px;
+        }
+
+        body.dark ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+
+        /* Navbar */
+        nav {
+            height: 68px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 500;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        body.dark nav {
+            background: rgba(18, 18, 18, 0.75);
+            border-bottom: 1px solid #262626;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .upload-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .upload-btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.06);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+        }
+
+        .upload-btn:active {
+            transform: translateY(0);
+        }
+
+        .login-btn {
+            background: var(--surface);
+            color: var(--text);
+            padding: 10px 18px;
+            border-radius: 10px;
+            border: 1.5px solid var(--border);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .login-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .logout-btn {
+            background: #eeeeee;
+            color: var(--text);
+            padding: 10px 18px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.18s ease, transform 0.18s ease;
+        }
+
+        .logout-btn:hover {
+            background: #dddddd;
+            transform: translateY(-2px);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 20px 60px;
+            background:
+                linear-gradient(rgba(10, 10, 20, 0.62), rgba(10, 10, 20, 0.72)),
+                url('/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body.dark .hero {
+            background:
+                linear-gradient(rgba(5, 5, 10, 0.72), rgba(5, 5, 10, 0.8)),
+                url('/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            letter-spacing: -0.8px;
+            animation: fadeUp 0.6s ease both;
+            color: #ffffff;
+        }
+
+        .hero p {
+            color: #d8d8e2;
+            margin-bottom: 28px;
+            font-size: 15.5px;
+            animation: fadeUp 0.6s ease 0.1s both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Search */
+        .search-box {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 6px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            animation: fadeUp 0.6s ease 0.2s both;
+        }
+
+        body.dark .search-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .search-box input {
+            flex: 1;
+            min-width: 0;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 15px 18px;
+            font-size: 15px;
+            font-family: inherit;
+            color: inherit;
+        }
+
+        .search-box button {
+            flex-shrink: 0;
+            border: none;
+            background: var(--gradient);
+            color: white;
+            padding: 0 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: filter 0.18s ease, transform 0.18s ease;
+        }
+
+        .search-box button:hover {
+            filter: brightness(1.08);
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 380px) {
+
+            .search-box button {
+                padding: 0 14px;
+                font-size: 13px;
+            }
+
+            .search-box input {
+                padding: 13px 12px;
+                font-size: 14px;
+            }
+        }
+
+        #advancedSearchToggle {
+            font-size: 13px;
+            color: #d8d8e2 !important;
+            text-decoration: none !important;
+            font-weight: 500;
+            transition: color 0.15s ease;
+        }
+
+        #advancedSearchToggle:hover {
+            color: #ffffff !important;
+        }
+
+        #advancedSearchCategory,
+        #advancedSearchSort {
+            padding: 10px 14px !important;
+            border-radius: 10px !important;
+            border: 1.5px solid var(--border) !important;
+            font-size: 13px !important;
+            font-family: inherit;
+            background: var(--surface);
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        body.dark #advancedSearchToggle {
+            color: #aaa !important;
+        }
+
+        body.dark #advancedSearchCategory,
+        body.dark #advancedSearchSort {
+            background: #262626 !important;
+            color: #eee !important;
+            border-color: #333 !important;
+        }
+
+        /* Gallery */
+        .gallery {
+            padding: 40px 15px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery h2 {
+            margin-bottom: 20px;
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        /* Category filter chips */
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .category-chip {
+            border: 1.5px solid var(--border);
+            background: var(--surface);
+            color: var(--text-muted);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: inherit;
+            cursor: pointer;
+            transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+        }
+
+        .category-chip:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .category-chip.active {
+            background: var(--gradient);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark .category-chip {
+            background: #1a1a1a;
+            color: #ccc;
+            border-color: #2e2e2e;
+        }
+
+        body.dark .category-chip.active {
+            color: white;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .image-card {
+            display: block;
+            position: relative;
+            animation: fadeUp 0.4s ease both;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            opacity: 0;
+            transition: opacity 0.35s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            background: #eee;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .image-card img.loaded {
+            opacity: 1;
+        }
+
+        .image-card img:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .image-card p {
+            margin-top: 9px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: color 0.15s ease;
+        }
+
+        .image-card:hover p {
+            color: var(--accent);
+        }
+
+        /* Skeleton loading cards */
+
+        .skeleton-card {
+            display: block;
+        }
+
+        .skeleton-img {
+            width: 100%;
+            height: 180px;
+            border-radius: var(--radius);
+            background: linear-gradient(
+                90deg,
+                #ececf3 25%,
+                #f6f6fb 37%,
+                #ececf3 63%
+            );
+            background-size: 400% 100%;
+            animation: skeleton-loading 1.4s ease infinite;
+        }
+
+        body.dark .skeleton-img,
+        body.dark .skeleton-text {
+            background: linear-gradient(
+                90deg,
+                #232323 25%,
+                #2c2c2c 37%,
+                #232323 63%
+            ) !important;
+            background-size: 400% 100%;
+        }
+
+        .skeleton-text {
+            margin-top: 9px;
+            height: 12px;
+            width: 60%;
+            border-radius: 4px;
+            background: linear-gradient(
+                90deg,
+                #ececf3 25%,
+                #f6f6fb 37%,
+                #ececf3 63%
+            );
+            background-size: 400% 100%;
+            animation: skeleton-loading 1.4s ease infinite;
+        }
+
+        @keyframes skeleton-loading {
+            0% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Load More spinner */
+
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .delete-btn {
+            display: none;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(20, 15, 35, 0.55);
+            backdrop-filter: blur(4px);
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s ease, transform 0.15s ease;
+        }
+
+        .delete-btn:hover {
+            background: #e0405a;
+            transform: scale(1.08);
+        }
+
+        .edit-btn {
+            display: none;
+            position: absolute;
+            top: 46px;
+            right: 8px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(20, 15, 35, 0.55);
+            backdrop-filter: blur(4px);
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s ease, transform 0.15s ease;
+        }
+
+        .edit-btn:hover {
+            background: var(--accent);
+            transform: scale(1.08);
+        }
+
+        .admin-mode .delete-btn,
+        .admin-mode .edit-btn {
+            display: flex;
+        }
+
+        .favorite-btn {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(20, 15, 35, 0.55);
+            backdrop-filter: blur(4px);
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.15s ease, background 0.15s ease;
+        }
+
+        .favorite-btn:hover {
+            transform: scale(1.12);
+        }
+
+        .favorite-btn.active {
+            color: #ff4d6d;
+        }
+
+        .no-result {
+            display: none;
+            text-align: center;
+            padding: 50px 10px;
+            color: var(--text-muted);
+            grid-column: 1 / -1;
+            font-size: 14.5px;
+        }
+
+        /* Toast notifications */
+
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 90%;
+            max-width: 380px;
+        }
+
+        .toast {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 18px;
+            border-radius: 12px;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast.success {
+            background: linear-gradient(135deg, #1a7f37, #23a349);
+        }
+
+        .toast.error {
+            background: linear-gradient(135deg, #d33, #e0576f);
+        }
+
+        .toast.info {
+            background: linear-gradient(135deg, #2a2a3a, #3a3a52);
+        }
+
+        .toast-icon {
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* Dark mode base overrides */
+
+        body.dark {
+            background: #101014;
+            color: #eee;
+            --surface: #1a1a1e;
+            --border: #2a2a30;
+            --text: #eee;
+            --text-muted: #9b9bab;
+        }
+
+        body.dark .logout-btn {
+            background: #2a2a30;
+            color: #eee;
+        }
+
+        body.dark .logout-btn:hover {
+            background: #37373f;
+        }
+
+        body.dark .modal-box {
+            background: #1a1a1e;
+            color: #eee;
+        }
+
+        body.dark .modal-box input,
+        body.dark .modal-box select {
+            background: #232328;
+            color: #eee;
+            border-color: #333;
+        }
+
+        body.dark .cancel-btn {
+            background: #2a2a30;
+            color: #eee;
+        }
+
+        body.dark footer {
+            background: #0a0a0c;
+        }
+
+        .theme-toggle-btn {
+            background: var(--surface);
+            border: 1.5px solid var(--border);
+            color: var(--text);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .theme-toggle-btn:hover {
+            transform: rotate(20deg) scale(1.08);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Image viewer action buttons */
+
+        .viewer-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 18px;
+            flex-wrap: wrap;
+        }
+
+        .viewer-action-btn {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 9px 16px;
+            border-radius: 22px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: inherit;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.18s ease, transform 0.18s ease;
+        }
+
+        .viewer-action-btn:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        .viewer-action-btn.active {
+            background: var(--gradient);
+            border-color: transparent;
+        }
+
+        /* Full page initial loading overlay */
+
+        .page-loader {
+            position: fixed;
+            inset: 0;
+            background: var(--bg);
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            transition: opacity 0.4s ease;
+        }
+
+        .page-loader.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .page-loader-spinner {
+            width: 44px;
+            height: 44px;
+            border: 4px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        .page-loader p {
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        body.dark .page-loader {
+            background: #101014;
+        }
+
+        /* Image info panel in viewer */
+
+        .viewer-info-panel {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-top: 16px;
+            text-align: left;
+            font-size: 13px;
+            color: #ddd;
+            display: none;
+        }
+
+        .viewer-info-panel.show {
+            display: block;
+            animation: fadeUp 0.3s ease both;
+        }
+
+        .viewer-info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .viewer-info-row:last-child {
+            border-bottom: none;
+        }
+
+        .viewer-info-row span:first-child {
+            color: #999;
+            font-weight: 500;
+        }
+
+        .viewer-info-row span:last-child {
+            color: white;
+            text-align: right;
+        }
+
+        /* Viewer next/previous navigation.
+           Uses a solid (non-blur) dark background so the arrow glyph never
+           blends into the button on devices where backdrop-filter misbehaves. */
+
+        .viewer-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(20, 20, 25, 0.65);
+            color: #ffffff;
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            font-size: 22px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+            transition: background 0.18s ease, transform 0.18s ease, opacity 0.2s ease;
+        }
+
+        .viewer-nav-btn:hover,
+        .viewer-nav-btn:active {
+            background: rgba(0, 0, 0, 0.85);
+            transform: translateY(-50%) scale(1.08);
+        }
+
+        .viewer-nav-btn.prev {
+            left: -8px;
+        }
+
+        .viewer-nav-btn.next {
+            right: -8px;
+        }
+
+        .viewer-nav-btn.zoom-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @media (min-width: 700px) {
+
+            .viewer-nav-btn.prev {
+                left: -54px;
+            }
+
+            .viewer-nav-btn.next {
+                right: -54px;
+            }
+        }
+
+        /* Modal (shared by upload + login) */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 10, 30, 0.55);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .modal-box {
+            width: 100%;
+            max-width: 420px;
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 26px;
+            box-shadow: var(--shadow-lg);
+            animation: modalPop 0.25s ease both;
+        }
+
+        @keyframes modalPop {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .modal-box h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .modal-box input,
+        .modal-box select {
+            width: 100%;
+            padding: 13px 14px;
+            margin-bottom: 12px;
+            border: 1.5px solid var(--border);
+            border-radius: 11px;
+            outline: none;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.15s ease;
+        }
+
+        .modal-box input:focus,
+        .modal-box select:focus {
+            border-color: var(--accent);
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .modal-actions button {
+            flex: 1;
+            padding: 13px;
+            border: none;
+            border-radius: 11px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
+            transition: filter 0.15s ease, transform 0.15s ease;
+        }
+
+        .modal-actions button:hover {
+            transform: translateY(-1px);
+        }
+
+        .cancel-btn {
+            background: #eeeeee;
+            color: var(--text);
+        }
+
+        .submit-btn {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit-btn:hover {
+            filter: brightness(1.06);
+        }
+
+        .file-name {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .error-text {
+            color: #d33;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #14141c;
+            color: #ccc;
+            margin-top: 50px;
+            padding: 45px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+
+        .footer-col h3 {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            color: #a3a3b5;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            line-height: 1.6;
+            transition: color 0.15s ease;
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 28px auto 0;
+            padding-top: 22px;
+            border-top: 1px solid #26262f;
+            text-align: center;
+            font-size: 13px;
+            color: #77778a;
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+
+            nav {
+                padding: 0 12px;
+            }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            .nav-actions {
+                gap: 5px;
+            }
+
+            .login-btn,
+            .upload-btn,
+            .logout-btn {
+                padding: 7px 10px;
+                font-size: 11.5px;
+            }
+
+            .theme-toggle-btn,
+            #installAppButton {
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+
+            .images {
+                gap: 10px;
+            }
+
+            .image-card img {
+                height: 140px;
+            }
+
+            .category-chip {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 480px) and (max-width: 899px) {
+
+            .images {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .image-card img {
+                height: 190px;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 900px) {
+
+            .images {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .image-card img {
+                height: 220px;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Large desktop */
+        @media (min-width: 1300px) {
+
+            .images {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Full page initial loading overlay -->
+    <div class="page-loader" id="pageLoader">
+        <div class="page-loader-spinner"></div>
+        <p>Loading HardwareSikho...</p>
+    </div>
+
+    <!-- Toast notification container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+
+    <!-- Navbar -->
+    <nav>
+
+        <div class="logo">
+            <img src="/logo-navbar.png" alt="HardwareSikho" style="height:36px; display:block;">
+        </div>
+
+        <div class="nav-actions">
+
+            <button
+                class="theme-toggle-btn hidden"
+                id="installAppButton"
+                title="Install HardwareSikho as an app">
+                ⬇️
+            </button>
+
+            <button
+                class="theme-toggle-btn"
+                id="themeToggle"
+                title="Toggle dark mode">
+                🌙
+            </button>
+
+            <button
+                class="login-btn"
+                id="openLogin">
+                Admin Login
+            </button>
+
+            <button
+                class="upload-btn hidden"
+                id="openUpload">
+                Upload
+            </button>
+
+            <button
+                class="logout-btn hidden"
+                id="logoutButton">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>
+            Find the perfect hardware image
+        </h1>
+
+        <p>
+            Search useful computer hardware images quickly and easily.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                id="searchInput"
+                type="text"
+                placeholder="Search hardware images..."
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+        <div style="text-align:center; margin-top:10px;">
+            <a href="javascript:void(0)" id="advancedSearchToggle" style="font-size:13px; color:#666; text-decoration:underline;">
+                Advanced Search
+            </a>
+        </div>
+
+        <div id="advancedSearchPanel" class="hidden" style="
+            max-width:600px;
+            margin:12px auto 0;
+            display:flex;
+            gap:10px;
+            flex-wrap:wrap;
+            justify-content:center;
+        ">
+
+            <select id="advancedSearchCategory" style="
+                padding:10px 12px;
+                border-radius:8px;
+                border:1px solid #ddd;
+                font-size:13px;
+            ">
+                <option value="">All categories</option>
+                <option value="Motherboard">Motherboard</option>
+                <option value="CPU">CPU</option>
+                <option value="RAM">RAM</option>
+                <option value="Storage">Storage</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Cables">Cables</option>
+                <option value="Monitor / Display">Monitor / Display</option>
+                <option value="Optical Drive">Optical Drive</option>
+                <option value="Cooling">Cooling</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="advancedSearchSort" style="
+                padding:10px 12px;
+                border-radius:8px;
+                border:1px solid #ddd;
+                font-size:13px;
+            ">
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="name_asc">Name (A–Z)</option>
+                <option value="name_desc">Name (Z–A)</option>
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="gallery">
+
+        <h2 id="galleryTitle">
+            Popular Images
+        </h2>
+
+        <div class="category-filters" id="categoryFilters">
+
+            <button class="category-chip active" data-category="">All</button>
+            <button class="category-chip" data-category="Motherboard">Motherboard</button>
+            <button class="category-chip" data-category="CPU">CPU</button>
+            <button class="category-chip" data-category="RAM">RAM</button>
+            <button class="category-chip" data-category="Storage">Storage</button>
+            <button class="category-chip" data-category="Keyboard">Keyboard</button>
+            <button class="category-chip" data-category="Mouse">Mouse</button>
+            <button class="category-chip" data-category="Cables">Cables</button>
+            <button class="category-chip" data-category="Monitor / Display">Monitor / Display</button>
+            <button class="category-chip" data-category="Optical Drive">Optical Drive</button>
+            <button class="category-chip" data-category="Cooling">Cooling</button>
+            <button class="category-chip" data-category="Other">Other</button>
+            <button class="category-chip" id="favoritesChip" data-category="__favorites__">❤️ Favorites</button>
+
+        </div>
+
+        <div
+            class="images"
+            id="imageGallery">
+
+            <div
+                class="no-result"
+                id="noResult">
+
+                No images found.
+
+            </div>
+
+        </div>
+
+        <div
+            style="text-align:center; margin-top:20px;">
+
+            <button
+                id="loadMoreButton"
+                class="upload-btn hidden">
+                Load More
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-col">
+                <h3>HardwareSikho</h3>
+                <p>
+                    A free gallery of computer hardware images —
+                    motherboards, SATA cables, CPUs, RAM, and more.
+                    Built for students, sellers, and hardware enthusiasts.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>
+                    HardwareSikho helps you quickly find and browse
+                    high-quality computer hardware images for learning,
+                    listings, or reference.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <a href="mailto:ruhan.support@gmail.com">
+                    ruhan.support@gmail.com
+                </a>
+                <p>
+                    Have feedback or found an issue? Reach out anytime.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © <span id="footerYear"></span> HardwareSikho. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- Login Modal -->
+
+    <div
+        class="modal"
+        id="loginModal">
+
+        <div class="modal-box">
+
+            <h2>
+                Admin Login
+            </h2>
+
+            <div class="error-text" id="loginError"></div>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+                autocomplete="username"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+                autocomplete="current-password"
+            >
+
+            <div class="modal-actions">
+
+                <button
+                    class="cancel-btn"
+                    id="closeLogin">
+                    Cancel
+                </button>
+
+                <button
+                    class="submit-btn"
+                    id="loginSubmitButton">
+                    Login
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Upload Modal -->
+
+    <div
+        class="modal"
+        id="uploadModal">
+
+        <div class="modal-box">
+
+            <h2>
+                Upload Image
+            </h2>
+
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/jpeg,image/png,image/webp"
+            >
+
+            <div
+                class="file-name"
+                id="fileName">
+                No image selected
+            </div>
+
+
+            <input
+                type="text"
+                id="imageName"
+                placeholder="Image name"
+            >
+
+
+            <input
+                type="text"
+                id="imageTags"
+                placeholder="Tags (e.g. motherboard, pc)"
+            >
+
+
+            <select id="imageCategory">
+
+                <option value="">
+                    Select category
+                </option>
+
+                <option value="Motherboard">
+                    Motherboard
+                </option>
+
+                <option value="CPU">
+                    CPU
+                </option>
+
+                <option value="RAM">
+                    RAM
+                </option>
+
+                <option value="Storage">
+                    Storage
+                </option>
+
+                <option value="Keyboard">
+                    Keyboard
+                </option>
+
+                <option value="Mouse">
+                    Mouse
+                </option>
+
+                <option value="Cables">
+                    Cables
+                </option>
+
+                <option value="Monitor / Display">
+                    Monitor / Display
+                </option>
+
+                <option value="Optical Drive">
+                    Optical Drive
+                </option>
+
+                <option value="Cooling">
+                    Cooling
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <textarea
+                id="imageDescription"
+                placeholder="Description (explain what this component is, its function, etc. — shown when someone opens the image)"
+                rows="4"
+                style="width:100%; padding:13px 14px; margin-bottom:12px; border:1.5px solid var(--border); border-radius:11px; outline:none; font-size:14px; font-family:inherit; resize:vertical;"
+            ></textarea>
+
+
+            <div class="modal-actions">
+
+                <button
+                    class="cancel-btn"
+                    id="closeUpload">
+                    Cancel
+                </button>
+
+                <button
+                    class="submit-btn"
+                    id="uploadImageButton">
+                    Upload
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Edit Modal -->
+
+    <div
+        class="modal"
+        id="editModal">
+
+        <div class="modal-box">
+
+            <h2>
+                Edit Image
+            </h2>
+
+            <input
+                type="text"
+                id="editImageName"
+                placeholder="Image name"
+            >
+
+            <input
+                type="text"
+                id="editImageTags"
+                placeholder="Tags (e.g. motherboard, pc)"
+            >
+
+            <select id="editImageCategory">
+
+                <option value="">Select category</option>
+                <option value="Motherboard">Motherboard</option>
+                <option value="CPU">CPU</option>
+                <option value="RAM">RAM</option>
+                <option value="Storage">Storage</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Cables">Cables</option>
+                <option value="Monitor / Display">Monitor / Display</option>
+                <option value="Optical Drive">Optical Drive</option>
+                <option value="Cooling">Cooling</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+            <textarea
+                id="editImageDescription"
+                placeholder="Description (explain what this component is, its function, etc.)"
+                rows="4"
+                style="width:100%; padding:13px 14px; margin-bottom:12px; border:1.5px solid var(--border); border-radius:11px; outline:none; font-size:14px; font-family:inherit; resize:vertical;"
+            ></textarea>
+
+            <div class="modal-actions">
+
+                <button
+                    class="cancel-btn"
+                    id="closeEdit">
+                    Cancel
+                </button>
+
+                <button
+                    class="submit-btn"
+                    id="saveEditButton">
+                    Save Changes
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Supabase Library -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        const SUPABASE_URL =
+    "https://npgraykkxnjcbuufpzje.supabase.co";
+
+const SUPABASE_KEY =
+    "sb_publishable_jTB-Gn6u6ufm8Y6lpa3RyA_h4co-X3c";
+
+const supabaseClient =
+    window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
+
+// ==========================
+// Toast notifications
+// ==========================
+
+const toastContainer =
+    document.getElementById("toastContainer");
+
+function showToast(message, type) {
+
+    // type: "success" | "error" | "info"
+
+    const toast =
+        document.createElement("div");
+
+    toast.className = "toast " + (type || "info");
+
+    const icon =
+        document.createElement("span");
+
+    icon.className = "toast-icon";
+
+    icon.textContent =
+        type === "success" ? "✓" :
+        type === "error" ? "✕" : "ℹ";
+
+    const text =
+        document.createElement("span");
+
+    text.textContent = message;
+
+    toast.appendChild(icon);
+    toast.appendChild(text);
+
+    toastContainer.appendChild(toast);
+
+    // Trigger the show animation
+
+    requestAnimationFrame(function () {
+        toast.classList.add("show");
+    });
+
+    // Auto-remove after a few seconds
+
+    setTimeout(function () {
+
+        toast.classList.remove("show");
+
+        setTimeout(function () {
+            toast.remove();
+        }, 300);
+
+    }, 3500);
+
+}
+
+
+// ==========================
+// Favorites (stored in localStorage)
+// ==========================
+
+function getFavorites() {
+
+    try {
+
+        const stored =
+            localStorage.getItem("hs_favorites");
+
+        return stored ? JSON.parse(stored) : [];
+
+    } catch (error) {
+
+        return [];
+
+    }
+
+}
+
+function isFavorite(imageId) {
+
+    return getFavorites()
+        .map(String)
+        .includes(String(imageId));
+
+}
+
+function toggleFavorite(imageId) {
+
+    const favorites = getFavorites();
+
+    const idStr = String(imageId);
+
+    const index =
+        favorites.map(String).indexOf(idStr);
+
+    let nowFavorite;
+
+    if (index === -1) {
+
+        favorites.push(idStr);
+        nowFavorite = true;
+
+    } else {
+
+        favorites.splice(index, 1);
+        nowFavorite = false;
+
+    }
+
+    try {
+
+        localStorage.setItem(
+            "hs_favorites",
+            JSON.stringify(favorites)
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
+    return nowFavorite;
+
+}
+
+
+// ==========================
+// Dark / light mode
+// ==========================
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+function applyTheme(theme) {
+
+    if (theme === "dark") {
+
+        document.body.classList.add("dark");
+        themeToggle.textContent = "☀️";
+
+    } else {
+
+        document.body.classList.remove("dark");
+        themeToggle.textContent = "🌙";
+
+    }
+
+}
+
+function getSavedTheme() {
+
+    try {
+        return localStorage.getItem("hs_theme") || "light";
+    } catch (error) {
+        return "light";
+    }
+
+}
+
+applyTheme(getSavedTheme());
+
+themeToggle.addEventListener("click", function () {
+
+    const isDark =
+        document.body.classList.contains("dark");
+
+    const newTheme = isDark ? "light" : "dark";
+
+    applyTheme(newTheme);
+
+    try {
+        localStorage.setItem("hs_theme", newTheme);
+    } catch (error) {
+        console.error(error);
+    }
+
+});
+
+
+// ==========================
+// Elements
+// ==========================
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const searchButton =
+    document.getElementById("searchButton");
+
+const imageGallery =
+    document.getElementById("imageGallery");
+
+const noResult =
+    document.getElementById("noResult");
+
+const galleryTitle =
+    document.getElementById("galleryTitle");
+
+const uploadModal =
+    document.getElementById("uploadModal");
+
+const openUpload =
+    document.getElementById("openUpload");
+
+const closeUpload =
+    document.getElementById("closeUpload");
+
+const imageInput =
+    document.getElementById("imageInput");
+
+const fileName =
+    document.getElementById("fileName");
+
+const imageName =
+    document.getElementById("imageName");
+
+const imageTags =
+    document.getElementById("imageTags");
+
+const imageCategory =
+    document.getElementById("imageCategory");
+
+const imageDescription =
+    document.getElementById("imageDescription");
+
+const uploadImageButton =
+    document.getElementById("uploadImageButton");
+
+const loadMoreButton =
+    document.getElementById("loadMoreButton");
+
+const advancedSearchToggle =
+    document.getElementById("advancedSearchToggle");
+
+const advancedSearchPanel =
+    document.getElementById("advancedSearchPanel");
+
+const advancedSearchCategory =
+    document.getElementById("advancedSearchCategory");
+
+const advancedSearchSort =
+    document.getElementById("advancedSearchSort");
+
+
+// Auth elements
+
+const loginModal =
+    document.getElementById("loginModal");
+
+const openLogin =
+    document.getElementById("openLogin");
+
+const closeLogin =
+    document.getElementById("closeLogin");
+
+const loginEmail =
+    document.getElementById("loginEmail");
+
+const loginPassword =
+    document.getElementById("loginPassword");
+
+const loginSubmitButton =
+    document.getElementById("loginSubmitButton");
+
+const loginError =
+    document.getElementById("loginError");
+
+const logoutButton =
+    document.getElementById("logoutButton");
+
+
+// ==========================
+// Auth state handling
+// ==========================
+
+async function refreshAuthUI() {
+
+    const {
+        data: { session }
+    } = await supabaseClient.auth.getSession();
+
+    if (session) {
+
+        openLogin.classList.add("hidden");
+        openUpload.classList.remove("hidden");
+        logoutButton.classList.remove("hidden");
+        imageGallery.classList.add("admin-mode");
+
+    } else {
+
+        openLogin.classList.remove("hidden");
+        openUpload.classList.add("hidden");
+        logoutButton.classList.add("hidden");
+        imageGallery.classList.remove("admin-mode");
+
+    }
+
+}
+
+
+supabaseClient.auth.onAuthStateChange(function () {
+    refreshAuthUI();
+});
+
+
+// ==========================
+// Open / close login modal
+// ==========================
+
+openLogin.addEventListener("click", function () {
+
+    loginError.style.display = "none";
+    loginEmail.value = "";
+    loginPassword.value = "";
+
+    loginModal.style.display = "flex";
+
+});
+
+
+closeLogin.addEventListener("click", function () {
+    loginModal.style.display = "none";
+});
+
+
+// ==========================
+// Login submit
+// ==========================
+
+loginSubmitButton.addEventListener(
+    "click",
+    async function () {
+
+        const email = loginEmail.value.trim();
+        const password = loginPassword.value;
+
+        if (!email || !password) {
+
+            loginError.textContent =
+                "Please enter email and password.";
+
+            loginError.style.display = "block";
+
+            return;
+        }
+
+        loginSubmitButton.disabled = true;
+        loginSubmitButton.textContent = "Logging in...";
+
+        const { error } =
+            await supabaseClient.auth.signInWithPassword({
+                email: email,
+                password: password
+            });
+
+        loginSubmitButton.disabled = false;
+        loginSubmitButton.textContent = "Login";
+
+        if (error) {
+
+            loginError.textContent =
+                "Login failed: " + error.message;
+
+            loginError.style.display = "block";
+
+            return;
+        }
+
+        loginModal.style.display = "none";
+
+    }
+);
+
+
+// ==========================
+// Logout
+// ==========================
+
+logoutButton.addEventListener(
+    "click",
+    async function () {
+        await supabaseClient.auth.signOut();
+    }
+);
+
+
+// ==========================
+// Open upload modal
+// ==========================
+
+openUpload.addEventListener("click", function () {
+    uploadModal.style.display = "flex";
+});
+
+
+// ==========================
+// Close upload modal
+// ==========================
+
+closeUpload.addEventListener("click", function () {
+    uploadModal.style.display = "none";
+});
+
+
+// ==========================
+// File selected
+// ==========================
+
+imageInput.addEventListener("change", function () {
+
+    if (imageInput.files.length > 0) {
+
+        fileName.textContent =
+            imageInput.files[0].name;
+
+    } else {
+
+        fileName.textContent =
+            "No image selected";
+
+    }
+
+});
+
+
+// ==========================
+// Upload Image
+// ==========================
+
+uploadImageButton.addEventListener(
+    "click",
+    async function () {
+
+        try {
+
+            // Must be logged in
+
+            const {
+                data: { session }
+            } = await supabaseClient.auth.getSession();
+
+            if (!session) {
+                showToast("Please login as admin first.", "error");
+                return;
+            }
+
+
+            const file =
+                imageInput.files[0];
+
+            const name =
+                imageName.value.trim();
+
+            const tags =
+                imageTags.value.trim();
+
+            const category =
+                imageCategory.value;
+
+
+            // Check file
+
+            if (!file) {
+                showToast("Please select an image.", "error");
+                return;
+            }
+
+
+            // File size limit (5MB)
+
+            const maxSizeBytes = 5 * 1024 * 1024;
+
+            if (file.size > maxSizeBytes) {
+                showToast("Image must be smaller than 5MB.", "error");
+                return;
+            }
+
+
+            // Check name
+
+            if (!name) {
+                showToast("Please enter image name.", "error");
+                return;
+            }
+
+
+            // Check category
+
+            if (!category) {
+                showToast("Please select a category.", "error");
+                return;
+            }
+
+
+            // Disable button
+
+            uploadImageButton.disabled = true;
+
+            uploadImageButton.textContent =
+                "Uploading...";
+
+
+            // ==========================
+            // Create unique file name
+            // ==========================
+
+            const fileExtension =
+                file.name.split(".").pop();
+
+            const filePath =
+                Date.now() +
+                "-" +
+                Math.random()
+                    .toString(36)
+                    .substring(2) +
+                "." +
+                fileExtension;
+
+
+            // ==========================
+            // Upload to Storage
+            // ==========================
+
+            const {
+                error: storageError
+            } = await supabaseClient
+                .storage
+                .from("images")
+                .upload(
+                    filePath,
+                    file,
+                    {
+                        contentType: file.type,
+                        upsert: false
+                    }
+                );
+
+
+            if (storageError) {
+
+                console.error(storageError);
+
+                showToast(
+                    "Image upload failed: " + storageError.message,
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // ==========================
+            // Get public URL
+            // ==========================
+
+            const {
+                data: publicData
+            } =
+                supabaseClient
+                    .storage
+                    .from("images")
+                    .getPublicUrl(filePath);
+
+
+            const imageUrl =
+                publicData.publicUrl;
+
+
+            // ==========================
+            // Save information in table
+            // ==========================
+
+            const {
+                error: databaseError
+            } = await supabaseClient
+                .from("images")
+                .insert({
+
+                    title: name,
+
+                    tags: tags,
+
+                    category: category,
+
+                    description: imageDescription.value.trim(),
+
+                    image_url: imageUrl
+
+                });
+
+
+            if (databaseError) {
+
+                console.error(databaseError);
+
+                showToast(
+                    "Image uploaded, but database save failed: " + databaseError.message,
+                    "error"
+                );
+
+                return;
+            }
+
+
+            // ==========================
+            // Success
+            // ==========================
+
+            showToast("Image uploaded successfully!", "success");
+
+
+            // Close modal
+
+            uploadModal.style.display =
+                "none";
+
+
+            // Reset form
+
+            imageInput.value = "";
+
+            fileName.textContent =
+                "No image selected";
+
+            imageName.value = "";
+
+            imageTags.value = "";
+
+            imageCategory.value = "";
+
+            imageDescription.value = "";
+
+
+            // Reload images
+
+            loadImages(true);
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            showToast(
+                "Something went wrong: " + error.message,
+                "error"
+            );
+
+        } finally {
+
+            uploadImageButton.disabled = false;
+
+            uploadImageButton.textContent =
+                "Upload";
+
+        }
+
+    }
+);
+
+
+// ==========================
+// Load images from Supabase (paginated)
+// ==========================
+
+const PAGE_SIZE = 12;
+
+let currentPage = 0;
+let allImagesLoaded = false;
+let currentCategory = "";
+
+async function loadImages(reset) {
+
+    if (reset) {
+
+        currentPage = 0;
+        allImagesLoaded = false;
+
+        // Remove old Supabase cards
+
+        document
+            .querySelectorAll(
+                ".supabase-card"
+            )
+            .forEach(
+                card => card.remove()
+            );
+
+
+        // Show skeleton placeholders while fetching first page
+
+        showSkeletons(PAGE_SIZE);
+
+    }
+
+
+    if (allImagesLoaded) {
+        return;
+    }
+
+
+    const from = currentPage * PAGE_SIZE;
+    const to = from + PAGE_SIZE - 1;
+
+
+    loadMoreButton.disabled = true;
+
+    loadMoreButton.innerHTML =
+        '<span class="spinner"></span>Loading...';
+
+
+    let query =
+        supabaseClient
+            .from("images")
+            .select("*")
+            .order(
+                "id",
+                {
+                    ascending: false
+                }
+            )
+            .range(from, to);
+
+    if (currentCategory) {
+        query = query.eq("category", currentCategory);
+    }
+
+    const {
+        data,
+        error
+    } = await query;
+
+
+    removeSkeletons();
+
+    loadMoreButton.disabled = false;
+    loadMoreButton.textContent = "Load More";
+
+
+    if (error) {
+
+        console.error(error);
+
+        return;
+    }
+
+
+    // Add images
+
+    data.forEach(function (image) {
+
+        const card = createImageCard(image);
+
+        imageGallery
+            .insertBefore(
+                card,
+                noResult
+            );
+
+    });
+
+
+    currentPage++;
+
+
+    // If fewer than PAGE_SIZE returned, no more images left
+
+    if (data.length < PAGE_SIZE) {
+
+        allImagesLoaded = true;
+        loadMoreButton.classList.add("hidden");
+
+    } else {
+
+        loadMoreButton.classList.remove("hidden");
+
+    }
+
+}
+
+
+// ==========================
+// Skeleton loading placeholders
+// ==========================
+
+function showSkeletons(count) {
+
+    removeSkeletons();
+
+    for (let i = 0; i < count; i++) {
+
+        const card =
+            document.createElement("div");
+
+        card.className =
+            "image-card skeleton-card";
+
+        const img =
+            document.createElement("div");
+
+        img.className = "skeleton-img";
+
+        const text =
+            document.createElement("div");
+
+        text.className = "skeleton-text";
+
+        card.appendChild(img);
+        card.appendChild(text);
+
+        imageGallery
+            .insertBefore(
+                card,
+                noResult
+            );
+
+    }
+
+}
+
+
+function removeSkeletons() {
+
+    document
+        .querySelectorAll(".skeleton-card")
+        .forEach(
+            card => card.remove()
+        );
+
+}
+
+
+// ==========================
+// Build a single image card element
+// ==========================
+
+function createImageCard(image) {
+
+    const card =
+        document.createElement("div");
+
+    card.className =
+        "image-card supabase-card";
+
+    card.dataset.imageId = image.id;
+
+    card.dataset.category = image.category || "";
+    card.dataset.tags = image.tags || "";
+    card.dataset.title = image.title || "";
+    card.dataset.description = image.description || "";
+    card.dataset.createdAt = image.created_at || "";
+
+    card.setAttribute(
+        "data-keywords",
+        (
+            (image.title || "") +
+            " " +
+            (image.tags || "") +
+            " " +
+            (image.category || "")
+        ).toLowerCase()
+    );
+
+
+    // Safe DOM building (no innerHTML) to avoid XSS
+
+    const img = document.createElement("img");
+    img.src = image.image_url;
+    img.alt = image.title || "Hardware image";
+
+    img.addEventListener("load", function () {
+        img.classList.add("loaded");
+    });
+
+    img.addEventListener("error", function () {
+        img.classList.add("loaded");
+    });
+
+    const caption = document.createElement("p");
+    caption.textContent = image.title || "";
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "delete-btn";
+    deleteBtn.type = "button";
+    deleteBtn.title = "Delete image";
+    deleteBtn.textContent = "✕";
+    deleteBtn.dataset.imageId = image.id;
+    deleteBtn.dataset.imageUrl = image.image_url;
+
+    const editBtn = document.createElement("button");
+    editBtn.className = "edit-btn";
+    editBtn.type = "button";
+    editBtn.title = "Edit image";
+    editBtn.textContent = "✎";
+    editBtn.dataset.imageId = image.id;
+
+    const favoriteBtn = document.createElement("button");
+    favoriteBtn.className = "favorite-btn";
+    favoriteBtn.type = "button";
+    favoriteBtn.title = "Add to favorites";
+    favoriteBtn.textContent = "♥";
+    favoriteBtn.dataset.imageId = image.id;
+
+    if (isFavorite(image.id)) {
+        favoriteBtn.classList.add("active");
+    }
+
+    card.appendChild(deleteBtn);
+    card.appendChild(editBtn);
+    card.appendChild(favoriteBtn);
+    card.appendChild(img);
+    card.appendChild(caption);
+
+    return card;
+
+}
+
+
+loadMoreButton.addEventListener("click", function () {
+    loadImages(false);
+});
+
+
+// ==========================
+// Delete image
+// ==========================
+
+async function deleteImage(imageId, imageUrl) {
+
+    // Check login
+
+    const {
+        data: { session }
+    } = await supabaseClient.auth.getSession();
+
+    if (!session) {
+        showToast("Please login as admin first.", "error");
+        return;
+    }
+
+
+    const confirmed =
+        confirm("Are you sure you want to delete this image?");
+
+    if (!confirmed) {
+        return;
+    }
+
+
+    try {
+
+        // Extract storage file path from public URL
+
+        const marker = "/object/public/images/";
+
+        const markerIndex =
+            imageUrl.indexOf(marker);
+
+        if (markerIndex !== -1) {
+
+            const filePath =
+                imageUrl.substring(
+                    markerIndex + marker.length
+                );
+
+            const {
+                error: storageError
+            } = await supabaseClient
+                .storage
+                .from("images")
+                .remove([filePath]);
+
+            if (storageError) {
+                console.error(storageError);
+            }
+
+        }
+
+
+        // Delete database row
+
+        const {
+            error: databaseError
+        } = await supabaseClient
+            .from("images")
+            .delete()
+            .eq("id", imageId);
+
+        if (databaseError) {
+
+            console.error(databaseError);
+
+            showToast(
+                "Delete failed: " + databaseError.message,
+                "error"
+            );
+
+            return;
+        }
+
+
+        loadImages(true);
+
+        showToast("Image deleted.", "success");
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        showToast(
+            "Something went wrong: " + error.message,
+            "error"
+        );
+
+    }
+
+}
+
+
+// ==========================
+// Edit image
+// ==========================
+
+const editModal = document.getElementById("editModal");
+const closeEdit = document.getElementById("closeEdit");
+const editImageName = document.getElementById("editImageName");
+const editImageTags = document.getElementById("editImageTags");
+const editImageCategory = document.getElementById("editImageCategory");
+const editImageDescription = document.getElementById("editImageDescription");
+const saveEditButton = document.getElementById("saveEditButton");
+
+let currentEditImageId = null;
+
+function openEditModal(card) {
+
+    currentEditImageId = card.dataset.imageId;
+
+    editImageName.value = card.dataset.title || "";
+    editImageTags.value = card.dataset.tags || "";
+    editImageCategory.value = card.dataset.category || "";
+    editImageDescription.value = card.dataset.description || "";
+
+    editModal.style.display = "flex";
+
+}
+
+closeEdit.addEventListener("click", function () {
+    editModal.style.display = "none";
+});
+
+saveEditButton.addEventListener(
+    "click",
+    async function () {
+
+        try {
+
+            const {
+                data: { session }
+            } = await supabaseClient.auth.getSession();
+
+            if (!session) {
+                showToast("Please login as admin first.", "error");
+                return;
+            }
+
+
+            const name = editImageName.value.trim();
+            const tags = editImageTags.value.trim();
+            const category = editImageCategory.value;
+            const description = editImageDescription.value.trim();
+
+            if (!name) {
+                showToast("Please enter image name.", "error");
+                return;
+            }
+
+            if (!category) {
+                showToast("Please select a category.", "error");
+                return;
+            }
+
+
+            saveEditButton.disabled = true;
+            saveEditButton.textContent = "Saving...";
+
+
+            const {
+                error
+            } = await supabaseClient
+                .from("images")
+                .update({
+                    title: name,
+                    tags: tags,
+                    category: category,
+                    description: description
+                })
+                .eq("id", currentEditImageId);
+
+
+            if (error) {
+
+                console.error(error);
+
+                showToast(
+                    "Update failed: " + error.message,
+                    "error"
+                );
+
+                return;
+
+            }
+
+
+            showToast("Image updated!", "success");
+
+            editModal.style.display = "none";
+
+            loadImages(true);
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            showToast(
+                "Something went wrong: " + error.message,
+                "error"
+            );
+
+        } finally {
+
+            saveEditButton.disabled = false;
+            saveEditButton.textContent = "Save Changes";
+
+        }
+
+    }
+);
+
+
+imageGallery.addEventListener("click", function(event) {
+
+    const deleteButton =
+        event.target.closest(".delete-btn");
+
+    if (deleteButton) {
+
+        event.stopPropagation();
+
+        deleteImage(
+            deleteButton.dataset.imageId,
+            deleteButton.dataset.imageUrl
+        );
+
+        return;
+    }
+
+
+    const editButton =
+        event.target.closest(".edit-btn");
+
+    if (editButton) {
+
+        event.stopPropagation();
+
+        const card =
+            editButton.closest(".image-card");
+
+        openEditModal(card);
+
+        return;
+    }
+
+
+    const favoriteButton =
+        event.target.closest(".favorite-btn");
+
+    if (favoriteButton) {
+
+        event.stopPropagation();
+
+        const nowFavorite =
+            toggleFavorite(favoriteButton.dataset.imageId);
+
+        favoriteButton.classList.toggle("active", nowFavorite);
+
+        showToast(
+            nowFavorite ? "Added to favorites" : "Removed from favorites",
+            "success"
+        );
+
+        // If currently viewing the Favorites filter, refresh the list
+
+        if (currentCategory === "__favorites__") {
+            showFavorites();
+        }
+
+        return;
+    }
+
+});
+
+
+// ==========================
+// Search
+// ==========================
+
+// ==========================
+// Search (queries the whole database, not just loaded images)
+// ==========================
+
+async function searchImages() {
+
+    const searchText =
+        searchInput.value
+            .toLowerCase()
+            .trim();
+
+    const advancedCategory =
+        advancedSearchCategory.value;
+
+    const sortOrder =
+        advancedSearchSort.value;
+
+
+    // Nothing typed and no advanced category selected -> normal gallery
+
+    if (searchText === "" && !advancedCategory) {
+
+        galleryTitle.textContent =
+            "Popular Images";
+
+        // Show demo cards again
+
+        document
+            .querySelectorAll(".image-card:not(.supabase-card)")
+            .forEach(function(card) {
+                card.style.display = "block";
+            });
+
+        noResult.style.display = "none";
+
+        loadImages(true);
+
+        return;
+    }
+
+
+    galleryTitle.textContent =
+        searchText
+            ? "Search results for: " + searchText
+            : (advancedCategory + " Images");
+
+
+    // A text/advanced search overrides the category chip filter
+
+    currentCategory = "";
+
+    categoryFilters
+        .querySelectorAll(".category-chip")
+        .forEach(function (c) {
+            c.classList.toggle(
+                "active",
+                c.dataset.category === ""
+            );
+        });
+
+
+    // Hide Load More while showing search results
+
+    loadMoreButton.classList.add("hidden");
+
+
+    // Remove previous Supabase result cards and show skeletons while searching
+
+    document
+        .querySelectorAll(".supabase-card")
+        .forEach(
+            card => card.remove()
+        );
+
+    showSkeletons(6);
+
+
+    // Filter demo (hardcoded) cards by simple keyword + category match
+
+    const words =
+        searchText
+            .split(/\s+/)
+            .filter(word => word.length > 0);
+
+    let demoFound = 0;
+
+    document
+        .querySelectorAll(".image-card:not(.supabase-card)")
+        .forEach(function(card) {
+
+            const keywords =
+                (
+                    card.getAttribute("data-keywords") || ""
+                ).toLowerCase();
+
+            const matchesText =
+                words.length === 0 ||
+                words.every(function(word) {
+                    return keywords.includes(word);
+                });
+
+            const matchesCategory =
+                !advancedCategory ||
+                keywords.includes(advancedCategory.toLowerCase());
+
+            const matched = matchesText && matchesCategory;
+
+            card.style.display =
+                matched ? "block" : "none";
+
+            if (matched) {
+                demoFound++;
+            }
+
+        });
+
+
+    // Build the database query
+
+    let query =
+        supabaseClient
+            .from("images")
+            .select("*");
+
+    if (searchText) {
+
+        const orFilter =
+            `title.ilike.%${searchText}%,tags.ilike.%${searchText}%,category.ilike.%${searchText}%`;
+
+        query = query.or(orFilter);
+
+    }
+
+    if (advancedCategory) {
+        query = query.eq("category", advancedCategory);
+    }
+
+    if (sortOrder === "oldest") {
+        query = query.order("id", { ascending: true });
+    } else if (sortOrder === "name_asc") {
+        query = query.order("title", { ascending: true });
+    } else if (sortOrder === "name_desc") {
+        query = query.order("title", { ascending: false });
+    } else {
+        query = query.order("id", { ascending: false });
+    }
+
+    const {
+        data,
+        error
+    } = await query;
+
+
+    // Remove skeleton placeholders now that results are in
+
+    removeSkeletons();
+
+
+    if (error) {
+
+        console.error(error);
+
+        return;
+    }
+
+
+    // Apply any extra search words client-side (for multi-word AND matching)
+
+    const matchedRows =
+        data.filter(function(image) {
+
+            if (words.length === 0) return true;
+
+            const keywords =
+                (
+                    (image.title || "") +
+                    " " +
+                    (image.tags || "") +
+                    " " +
+                    (image.category || "")
+                ).toLowerCase();
+
+            return words.every(function(word) {
+                return keywords.includes(word);
+            });
+
+        });
+
+
+    matchedRows.forEach(function(image) {
+
+        const card = createImageCard(image);
+
+        imageGallery
+            .insertBefore(
+                card,
+                noResult
+            );
+
+    });
+
+
+    // No result message
+
+    if (matchedRows.length === 0 && demoFound === 0) {
+
+        noResult.style.display = "block";
+
+    } else {
+
+        noResult.style.display = "none";
+
+    }
+
+}
+
+
+// Search button
+searchButton.addEventListener(
+    "click",
+    searchImages
+);
+
+
+// Enter key
+searchInput.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Enter") {
+
+            searchImages();
+
+        }
+
+    }
+);
+
+
+// ==========================
+// Advanced search panel
+// ==========================
+
+advancedSearchToggle.addEventListener("click", function () {
+
+    advancedSearchPanel.classList.toggle("hidden");
+
+});
+
+advancedSearchCategory.addEventListener("change", searchImages);
+
+advancedSearchSort.addEventListener("change", searchImages);
+
+
+// ==========================
+// Category filter chips
+// ==========================
+
+const categoryFilters =
+    document.getElementById("categoryFilters");
+
+categoryFilters.addEventListener("click", function (event) {
+
+    const chip =
+        event.target.closest(".category-chip");
+
+    if (!chip) return;
+
+    // Update active chip styling
+
+    categoryFilters
+        .querySelectorAll(".category-chip")
+        .forEach(function (c) {
+            c.classList.remove("active");
+        });
+
+    chip.classList.add("active");
+
+
+    currentCategory = chip.dataset.category;
+
+
+    // Clear any active search when switching category/favorites
+
+    searchInput.value = "";
+
+    advancedSearchCategory.value = "";
+    advancedSearchSort.value = "newest";
+
+
+    if (currentCategory === "__favorites__") {
+
+        showFavorites();
+        return;
+
+    }
+
+
+    // Filter the hardcoded demo cards by category keyword
+
+    document
+        .querySelectorAll(".image-card:not(.supabase-card)")
+        .forEach(function (card) {
+
+            if (!currentCategory) {
+
+                card.style.display = "block";
+                return;
+
+            }
+
+            const keywords =
+                (
+                    card.getAttribute("data-keywords") || ""
+                ).toLowerCase();
+
+            const matches =
+                keywords.includes(
+                    currentCategory.toLowerCase()
+                );
+
+            card.style.display =
+                matches ? "block" : "none";
+
+        });
+
+
+    galleryTitle.textContent =
+        currentCategory
+            ? currentCategory + " Images"
+            : "Popular Images";
+
+
+    noResult.style.display = "none";
+
+    loadMoreButton.classList.remove("hidden");
+
+    loadImages(true);
+
+});
+
+
+// ==========================
+// Show favorites (queries Supabase for the saved favorite ids)
+// ==========================
+
+async function showFavorites() {
+
+    galleryTitle.textContent = "Your Favorites";
+
+    // Demo (hardcoded) cards are never favoritable, hide them here
+
+    document
+        .querySelectorAll(".image-card:not(.supabase-card)")
+        .forEach(function (card) {
+            card.style.display = "none";
+        });
+
+    loadMoreButton.classList.add("hidden");
+
+    document
+        .querySelectorAll(".supabase-card")
+        .forEach(card => card.remove());
+
+    const favoriteIds = getFavorites();
+
+    if (favoriteIds.length === 0) {
+
+        noResult.style.display = "block";
+        return;
+
+    }
+
+    showSkeletons(Math.min(favoriteIds.length, 6));
+
+    const {
+        data,
+        error
+    } = await supabaseClient
+        .from("images")
+        .select("*")
+        .in("id", favoriteIds);
+
+    removeSkeletons();
+
+    if (error) {
+
+        console.error(error);
+        return;
+
+    }
+
+    if (data.length === 0) {
+
+        noResult.style.display = "block";
+
+    } else {
+
+        noResult.style.display = "none";
+
+        data.forEach(function (image) {
+
+            const card = createImageCard(image);
+
+            imageGallery.insertBefore(card, noResult);
+
+        });
+
+    }
+
+}
+
+
+// ==========================
+// Init
+// ==========================
+
+// Fade in the hardcoded demo images once they load
+
+document
+    .querySelectorAll(".image-card:not(.supabase-card) img")
+    .forEach(function (img) {
+
+        if (img.complete) {
+
+            img.classList.add("loaded");
+
+        } else {
+
+            img.addEventListener("load", function () {
+                img.classList.add("loaded");
+            });
+
+            img.addEventListener("error", function () {
+                img.classList.add("loaded");
+            });
+
+        }
+
+    });
+
+
+refreshAuthUI();
+
+loadImages(true);
+
+// Hide the initial page loader quickly — the gallery already shows its
+// own skeleton placeholders while images fetch, so there's no need to
+// block the whole page behind this overlay.
+
+const pageLoader = document.getElementById("pageLoader");
+
+setTimeout(function () {
+
+    pageLoader.classList.add("hide");
+
+    setTimeout(function () {
+        pageLoader.remove();
+    }, 400);
+
+}, 200);
+
+// Auto-fill current year in footer
+
+document.getElementById("footerYear").textContent =
+    new Date().getFullYear();
+
+
+// ==========================
+// PWA: register service worker
+// ==========================
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", function () {
+
+        navigator.serviceWorker
+            .register("/sw.js")
+            .catch(function (error) {
+                console.error("Service worker registration failed:", error);
+            });
+
+    });
+
+}
+
+
+// ==========================
+// PWA: install prompt button
+// ==========================
+
+let deferredInstallPrompt = null;
+
+const installAppButton = document.getElementById("installAppButton");
+
+window.addEventListener("beforeinstallprompt", function (event) {
+
+    event.preventDefault();
+
+    deferredInstallPrompt = event;
+
+    installAppButton.classList.remove("hidden");
+
+});
+
+installAppButton.addEventListener("click", async function () {
+
+    if (!deferredInstallPrompt) return;
+
+    deferredInstallPrompt.prompt();
+
+    const choice = await deferredInstallPrompt.userChoice;
+
+    if (choice.outcome === "accepted") {
+        showToast("HardwareSikho installed!", "success");
+    }
+
+    deferredInstallPrompt = null;
+
+    installAppButton.classList.add("hidden");
+
+});
+
+window.addEventListener("appinstalled", function () {
+
+    installAppButton.classList.add("hidden");
+
+    showToast("HardwareSikho installed!", "success");
+
+});
+
+</script>
+  
+<!-- Image Viewer -->
+<div id="imageViewer" style="
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.85);
+    z-index:9999;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    overflow-y:auto;
+">
+
+    <button id="closeViewer" style="
+        position:fixed;
+        right:20px;
+        top:20px;
+        background:white;
+        border:none;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        font-size:22px;
+        cursor:pointer;
+        z-index:10000;
+    ">✕</button>
+
+    <div style="
+        position:relative;
+        max-width:900px;
+        width:100%;
+        text-align:center;
+        margin:auto;
+    ">
+
+        <button class="viewer-nav-btn prev" id="viewerPrevBtn">‹</button>
+        <button class="viewer-nav-btn next" id="viewerNextBtn">›</button>
+
+        <div id="viewerImageSpinner" style="
+            width:36px;
+            height:36px;
+            border:3px solid rgba(255,255,255,0.3);
+            border-top-color:white;
+            border-radius:50%;
+            animation: spin 0.7s linear infinite;
+            margin:0 auto 10px;
+            display:none;
+        "></div>
+
+        <img id="viewerImage" src="" alt="" style="
+            max-width:100%;
+            max-height:75vh;
+            border-radius:12px;
+            object-fit:contain;
+        ">
+
+        <h2 id="viewerTitle" style="
+            color:white;
+            margin-top:15px;
+            font-size:22px;
+        "></h2>
+
+        <p id="viewerDescription" style="
+            color:#ddd;
+            margin-top:10px;
+            font-size:14px;
+            line-height:1.6;
+            text-align:left;
+            max-width:500px;
+            margin-left:auto;
+            margin-right:auto;
+            display:none;
+            cursor:pointer;
+            white-space:normal;
+        "></p>
+
+        <div class="viewer-actions">
+
+            <button class="viewer-action-btn" id="viewerFavoriteBtn">
+                ♥ <span id="viewerFavoriteLabel">Favorite</span>
+            </button>
+
+            <button class="viewer-action-btn" id="viewerCopyBtn">
+                🔗 Copy Link
+            </button>
+
+            <button class="viewer-action-btn" id="viewerShareBtn">
+                📱 Share
+            </button>
+
+            <button class="viewer-action-btn" id="viewerDownloadBtn">
+                ⬇ Download
+            </button>
+
+            <button class="viewer-action-btn" id="viewerInfoBtn">
+                📊 Info
+            </button>
+
+        </div>
+
+        <div class="viewer-info-panel" id="viewerInfoPanel">
+
+            <div class="viewer-info-row">
+                <span>Category</span>
+                <span id="viewerInfoCategory">—</span>
+            </div>
+
+            <div class="viewer-info-row">
+                <span>Tags</span>
+                <span id="viewerInfoTags">—</span>
+            </div>
+
+            <div class="viewer-info-row">
+                <span>Dimensions</span>
+                <span id="viewerInfoDimensions">—</span>
+            </div>
+
+            <div class="viewer-info-row">
+                <span>Uploaded</span>
+                <span id="viewerInfoDate">—</span>
+            </div>
+
+        </div>
+
+        <p id="viewerInfo" style="
+            color:#ddd;
+            margin-top:8px;
+            font-size:14px;
+        "></p>
+
+    </div>
+</div>
+
+<script>
+
+const imageViewer = document.getElementById("imageViewer");
+const viewerImage = document.getElementById("viewerImage");
+const viewerTitle = document.getElementById("viewerTitle");
+const viewerDescription = document.getElementById("viewerDescription");
+const viewerInfo = document.getElementById("viewerInfo");
+const closeViewer = document.getElementById("closeViewer");
+
+const viewerFavoriteBtn = document.getElementById("viewerFavoriteBtn");
+const viewerFavoriteLabel = document.getElementById("viewerFavoriteLabel");
+const viewerCopyBtn = document.getElementById("viewerCopyBtn");
+const viewerShareBtn = document.getElementById("viewerShareBtn");
+const viewerDownloadBtn = document.getElementById("viewerDownloadBtn");
+const viewerInfoBtn = document.getElementById("viewerInfoBtn");
+const viewerInfoPanel = document.getElementById("viewerInfoPanel");
+const viewerInfoCategory = document.getElementById("viewerInfoCategory");
+const viewerInfoTags = document.getElementById("viewerInfoTags");
+const viewerInfoDimensions = document.getElementById("viewerInfoDimensions");
+const viewerInfoDate = document.getElementById("viewerInfoDate");
+const viewerImageSpinner = document.getElementById("viewerImageSpinner");
+const viewerPrevBtn = document.getElementById("viewerPrevBtn");
+const viewerNextBtn = document.getElementById("viewerNextBtn");
+
+let currentViewerImageId = null;
+let currentViewerImageUrl = "";
+let currentViewerImageTitle = "";
+let currentViewerIndex = -1;
+
+let currentViewerDescriptionFull = "";
+let viewerDescriptionExpanded = false;
+
+
+/* Render the description either as a single truncated line ending in
+   an inline "...See more", or fully expanded — toggled by clicking it. */
+
+function renderViewerDescription() {
+
+    const text = currentViewerDescriptionFull;
+
+    if (!text) return;
+
+    if (viewerDescriptionExpanded) {
+
+        viewerDescription.textContent = text;
+        return;
+
+    }
+
+    // First check whether the plain text (no suffix needed) already
+    // fits on a single line — if so, just show it as-is.
+
+    viewerDescription.textContent = text;
+
+    const singleLineHeight =
+        parseFloat(getComputedStyle(viewerDescription).lineHeight) ||
+        (parseFloat(getComputedStyle(viewerDescription).fontSize) * 1.6);
+
+    if (viewerDescription.scrollHeight <= singleLineHeight + 2) {
+        return;
+    }
+
+    // Otherwise, find the longest prefix that, together with a
+    // trailing "...See more", still fits on a single line.
+
+    const suffix = "See more";
+
+    let low = 0;
+    let high = text.length;
+    let best = "";
+
+    while (low <= high) {
+
+        const mid = Math.floor((low + high) / 2);
+
+        const candidate = text.slice(0, mid).trim() + "..." + suffix;
+
+        viewerDescription.textContent = candidate;
+
+        if (viewerDescription.scrollHeight <= singleLineHeight + 2) {
+
+            best = candidate;
+            low = mid + 1;
+
+        } else {
+
+            high = mid - 1;
+
+        }
+
+    }
+
+    viewerDescription.textContent =
+        best || ("..." + suffix);
+
+}
+
+viewerDescription.addEventListener("click", function () {
+
+    viewerDescriptionExpanded = !viewerDescriptionExpanded;
+
+    renderViewerDescription();
+
+});
+
+
+/* Get all currently visible (non-hidden, non-skeleton) cards, in DOM order */
+
+function getVisibleCards() {
+
+    return Array.from(
+        document.querySelectorAll(".image-card:not(.skeleton-card)")
+    ).filter(function (card) {
+        return card.style.display !== "none";
+    });
+
+}
+
+
+/* Open the viewer for a specific card element */
+
+function openViewerForCard(card) {
+
+    const image = card.querySelector("img");
+
+    if (!image) return;
+
+    // Lock the background page so it can't scroll behind the viewer
+
+    lockBodyScroll();
+
+    // Reset any pinch-zoom from a previously viewed image
+
+    resetViewerZoom();
+
+    const titleElement = card.querySelector("p");
+
+    const title = titleElement
+        ? titleElement.textContent
+        : "Hardware Image";
+
+    // Show a spinner until the full image finishes loading
+
+    viewerImage.classList.remove("loaded-in-viewer");
+    viewerImageSpinner.style.display = "block";
+    viewerImage.style.opacity = "0";
+
+    viewerImage.onload = function () {
+        viewerImageSpinner.style.display = "none";
+        viewerImage.style.opacity = "1";
+
+        viewerInfoDimensions.textContent =
+            viewerImage.naturalWidth + " × " + viewerImage.naturalHeight + " px";
+
+        // Cache the image's laid-out (untransformed) position/size —
+        // needed for correct pinch-zoom and pan math.
+
+        requestAnimationFrame(function () {
+            viewerImageBaseRect = viewerImage.getBoundingClientRect();
+        });
+    };
+
+    viewerImage.src = image.src;
+
+    viewerImage.alt = title;
+
+    viewerTitle.textContent = title;
+
+    const description = card.dataset.description || "";
+
+    currentViewerDescriptionFull = description;
+    viewerDescriptionExpanded = false;
+
+    if (description) {
+
+        viewerDescription.style.display = "block";
+        viewerDescription.textContent = "";
+
+    } else {
+
+        viewerDescription.textContent = "";
+        viewerDescription.style.display = "none";
+
+    }
+
+    viewerInfo.textContent =
+        "Use ‹ › to browse • Tap ✕ to close";
+
+    currentViewerImageId = card.dataset.imageId || null;
+
+    currentViewerImageUrl = image.src;
+
+    currentViewerImageTitle = title;
+
+    // Populate the info panel
+
+    viewerInfoCategory.textContent = card.dataset.category || "—";
+
+    viewerInfoTags.textContent = card.dataset.tags || "—";
+
+    viewerInfoDimensions.textContent = "Loading...";
+
+    const createdAt = card.dataset.createdAt;
+
+    if (createdAt) {
+
+        try {
+
+            viewerInfoDate.textContent =
+                new Date(createdAt).toLocaleDateString();
+
+        } catch (error) {
+
+            viewerInfoDate.textContent = "—";
+
+        }
+
+    } else {
+
+        viewerInfoDate.textContent = "—";
+
+    }
+
+    // Only Supabase-hosted images can be favorited (demo images have no id)
+
+    if (currentViewerImageId) {
+
+        viewerFavoriteBtn.style.display = "flex";
+
+        const active = isFavorite(currentViewerImageId);
+
+        viewerFavoriteBtn.classList.toggle("active", active);
+
+        viewerFavoriteLabel.textContent =
+            active ? "Favorited" : "Favorite";
+
+    } else {
+
+        viewerFavoriteBtn.style.display = "none";
+
+    }
+
+    imageViewer.style.display = "flex";
+
+    // Render the description now that the modal (and this element) are
+    // actually visible — measuring text height while hidden always
+    // returns 0, which would skip truncation entirely.
+
+    if (description) {
+
+        requestAnimationFrame(function () {
+            renderViewerDescription();
+        });
+
+    }
+
+}
+
+
+/* Show the previous/next image relative to the current one */
+
+function showViewerImageAtIndex(index) {
+
+    const cards = getVisibleCards();
+
+    if (cards.length === 0) return;
+
+    // Wrap around at both ends
+
+    const wrappedIndex =
+        (index + cards.length) % cards.length;
+
+    currentViewerIndex = wrappedIndex;
+
+    openViewerForCard(cards[wrappedIndex]);
+
+}
+
+
+/* Open image viewer (click on a gallery thumbnail) */
+
+document.addEventListener("click", function(event) {
+
+    const image = event.target.closest(".image-card img");
+
+    if (!image) return;
+
+    const card = image.closest(".image-card");
+
+    const cards = getVisibleCards();
+
+    currentViewerIndex = cards.indexOf(card);
+
+    openViewerForCard(card);
+
+});
+
+
+/* Prev / Next buttons */
+
+viewerPrevBtn.addEventListener("click", function () {
+    showViewerImageAtIndex(currentViewerIndex - 1);
+});
+
+viewerNextBtn.addEventListener("click", function () {
+    showViewerImageAtIndex(currentViewerIndex + 1);
+});
+
+
+/* Pinch-to-zoom + drag-to-pan on the viewer image.
+   While zoomed in, the prev/next arrows hide (so they don't get in the
+   way of viewing details) and reappear automatically once zoomed back out. */
+
+let viewerZoomScale = 1;
+let viewerTranslateX = 0;
+let viewerTranslateY = 0;
+let viewerImageBaseRect = null;
+
+let viewerPinchStartDistance = 0;
+let viewerPinchStartScale = 1;
+let viewerPinchAnchorX = 0;
+let viewerPinchAnchorY = 0;
+
+let viewerPanActive = false;
+let viewerPanLastX = 0;
+let viewerPanLastY = 0;
+
+function getTouchDistance(touches) {
+
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+
+    return Math.sqrt(dx * dx + dy * dy);
+
+}
+
+function clampViewerTranslate() {
+
+    if (!viewerImageBaseRect) return;
+
+    const maxX =
+        Math.max(0, (viewerZoomScale - 1) * viewerImageBaseRect.width / 2);
+
+    const maxY =
+        Math.max(0, (viewerZoomScale - 1) * viewerImageBaseRect.height / 2);
+
+    viewerTranslateX = Math.min(Math.max(viewerTranslateX, -maxX), maxX);
+    viewerTranslateY = Math.min(Math.max(viewerTranslateY, -maxY), maxY);
+
+}
+
+function applyViewerTransform() {
+
+    viewerImage.style.transformOrigin = "center center";
+
+    viewerImage.style.transform =
+        "translate(" + viewerTranslateX + "px, " + viewerTranslateY + "px) " +
+        "scale(" + viewerZoomScale + ")";
+
+    const isZoomed = viewerZoomScale > 1.05;
+
+    viewerPrevBtn.classList.toggle("zoom-hidden", isZoomed);
+    viewerNextBtn.classList.toggle("zoom-hidden", isZoomed);
+
+}
+
+function resetViewerZoom() {
+
+    viewerZoomScale = 1;
+    viewerTranslateX = 0;
+    viewerTranslateY = 0;
+
+    applyViewerTransform();
+
+}
+
+viewerImage.style.transition = "transform 0.15s ease";
+
+imageViewer.addEventListener("touchstart", function (event) {
+
+    if (!viewerImageBaseRect) {
+        viewerImageBaseRect = viewerImage.getBoundingClientRect();
+    }
+
+    if (event.touches.length === 2) {
+
+        viewerPanActive = false;
+
+        viewerPinchStartDistance = getTouchDistance(event.touches);
+        viewerPinchStartScale = viewerZoomScale;
+
+        const centerX =
+            viewerImageBaseRect.left + viewerImageBaseRect.width / 2;
+
+        const centerY =
+            viewerImageBaseRect.top + viewerImageBaseRect.height / 2;
+
+        const midX =
+            (event.touches[0].clientX + event.touches[1].clientX) / 2;
+
+        const midY =
+            (event.touches[0].clientY + event.touches[1].clientY) / 2;
+
+        // The point (in the image's own space, relative to its center)
+        // that currently sits under the pinch — keep it anchored there
+        // as the scale changes, instead of always zooming from center.
+
+        viewerPinchAnchorX =
+            (midX - centerX - viewerTranslateX) / viewerZoomScale;
+
+        viewerPinchAnchorY =
+            (midY - centerY - viewerTranslateY) / viewerZoomScale;
+
+        viewerImage.style.transition = "none";
+
+    } else if (event.touches.length === 1 && viewerZoomScale > 1.05) {
+
+        // Single-finger drag to pan around while zoomed in
+
+        viewerPanActive = true;
+
+        viewerPanLastX = event.touches[0].clientX;
+        viewerPanLastY = event.touches[0].clientY;
+
+        viewerImage.style.transition = "none";
+
+    }
+
+}, { passive: true });
+
+imageViewer.addEventListener("touchmove", function (event) {
+
+    if (event.touches.length === 2) {
+
+        const newDistance = getTouchDistance(event.touches);
+
+        if (viewerPinchStartDistance > 0) {
+
+            const factor = newDistance / viewerPinchStartDistance;
+
+            viewerZoomScale =
+                Math.min(Math.max(viewerPinchStartScale * factor, 1), 4);
+
+            const centerX =
+                viewerImageBaseRect.left + viewerImageBaseRect.width / 2;
+
+            const centerY =
+                viewerImageBaseRect.top + viewerImageBaseRect.height / 2;
+
+            const midX =
+                (event.touches[0].clientX + event.touches[1].clientX) / 2;
+
+            const midY =
+                (event.touches[0].clientY + event.touches[1].clientY) / 2;
+
+            viewerTranslateX =
+                midX - centerX - viewerPinchAnchorX * viewerZoomScale;
+
+            viewerTranslateY =
+                midY - centerY - viewerPinchAnchorY * viewerZoomScale;
+
+            clampViewerTranslate();
+            applyViewerTransform();
+
+        }
+
+    } else if (event.touches.length === 1 && viewerPanActive) {
+
+        const dx = event.touches[0].clientX - viewerPanLastX;
+        const dy = event.touches[0].clientY - viewerPanLastY;
+
+        viewerPanLastX = event.touches[0].clientX;
+        viewerPanLastY = event.touches[0].clientY;
+
+        viewerTranslateX += dx;
+        viewerTranslateY += dy;
+
+        clampViewerTranslate();
+        applyViewerTransform();
+
+    }
+
+}, { passive: true });
+
+imageViewer.addEventListener("touchend", function (event) {
+
+    viewerPanActive = false;
+
+    viewerImage.style.transition = "transform 0.15s ease";
+
+    // If pinched back down close to original size, snap fully back to 1x
+
+    if (viewerZoomScale < 1.1) {
+        resetViewerZoom();
+    }
+
+}, { passive: true });
+
+
+/* Arrow key navigation while viewer is open (desktop keyboards) */
+
+document.addEventListener("keydown", function (event) {
+
+    if (imageViewer.style.display !== "flex") return;
+
+    if (event.key === "ArrowRight") {
+        showViewerImageAtIndex(currentViewerIndex + 1);
+    }
+
+    if (event.key === "ArrowLeft") {
+        showViewerImageAtIndex(currentViewerIndex - 1);
+    }
+
+});
+
+
+/* Toggle image info panel */
+
+viewerInfoBtn.addEventListener("click", function () {
+
+    viewerInfoPanel.classList.toggle("show");
+
+    viewerInfoBtn.classList.toggle(
+        "active",
+        viewerInfoPanel.classList.contains("show")
+    );
+
+});
+
+
+/* Favorite button inside viewer */
+
+viewerFavoriteBtn.addEventListener("click", function () {
+
+    if (!currentViewerImageId) return;
+
+    const nowFavorite = toggleFavorite(currentViewerImageId);
+
+    viewerFavoriteBtn.classList.toggle("active", nowFavorite);
+
+    viewerFavoriteLabel.textContent =
+        nowFavorite ? "Favorited" : "Favorite";
+
+    // Keep the underlying grid heart icon in sync
+
+    const gridCard =
+        document.querySelector(
+            '.image-card[data-image-id="' + currentViewerImageId + '"]'
+        );
+
+    if (gridCard) {
+
+        const heart = gridCard.querySelector(".favorite-btn");
+
+        if (heart) {
+            heart.classList.toggle("active", nowFavorite);
+        }
+
+    }
+
+    showToast(
+        nowFavorite ? "Added to favorites" : "Removed from favorites",
+        "success"
+    );
+
+    if (currentCategory === "__favorites__") {
+        showFavorites();
+    }
+
+});
+
+
+/* Copy image link */
+
+viewerCopyBtn.addEventListener("click", async function () {
+
+    try {
+
+        await navigator.clipboard.writeText(currentViewerImageUrl);
+
+        showToast("Image link copied!", "success");
+
+    } catch (error) {
+
+        console.error(error);
+
+        showToast("Could not copy link.", "error");
+
+    }
+
+});
+
+
+/* Share button (Web Share API, falls back to copy) */
+
+viewerShareBtn.addEventListener("click", async function () {
+
+    if (navigator.share) {
+
+        try {
+
+            await navigator.share({
+                title: currentViewerImageTitle || "HardwareSikho",
+                text: "Check out this hardware image on HardwareSikho",
+                url: currentViewerImageUrl
+            });
+
+        } catch (error) {
+
+            // User cancelled share or it failed silently; no toast needed
+
+        }
+
+    } else {
+
+        try {
+
+            await navigator.clipboard.writeText(currentViewerImageUrl);
+
+            showToast("Sharing not supported — link copied instead!", "info");
+
+        } catch (error) {
+
+            showToast("Could not share or copy link.", "error");
+
+        }
+
+    }
+
+});
+
+
+/* Download button */
+
+viewerDownloadBtn.addEventListener("click", async function () {
+
+    try {
+
+        const response = await fetch(currentViewerImageUrl);
+
+        const blob = await response.blob();
+
+        const blobUrl = URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+
+        link.href = blobUrl;
+
+        link.download =
+            (currentViewerImageTitle || "hardware-image")
+                .replace(/\s+/g, "-")
+                .toLowerCase() + ".jpg";
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        link.remove();
+
+        URL.revokeObjectURL(blobUrl);
+
+        showToast("Download started!", "success");
+
+    } catch (error) {
+
+        console.error(error);
+
+        // Fallback: open image in a new tab so the user can save it manually
+
+        window.open(currentViewerImageUrl, "_blank");
+
+        showToast("Opened image in a new tab — long-press to save.", "info");
+
+    }
+
+});
+
+
+/* Lock/unlock background page scrolling while the viewer is open.
+   Simple overflow-hidden toggle — deliberately avoids the
+   position:fixed + scrollTo-restore trick, which can cause a visible
+   "jump" back to the wrong position on some Android browsers. */
+
+function lockBodyScroll() {
+
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+
+}
+
+function unlockBodyScroll() {
+
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+
+}
+
+
+/* Close viewer */
+
+function closeImageViewer() {
+
+    imageViewer.style.display = "none";
+
+    viewerImage.src = "";
+
+    viewerInfoPanel.classList.remove("show");
+
+    viewerInfoBtn.classList.remove("active");
+
+    resetViewerZoom();
+
+    unlockBodyScroll();
+
+}
+
+closeViewer.addEventListener("click", closeImageViewer);
+
+
+/* Close by clicking outside */
+
+imageViewer.addEventListener("click", function(event) {
+
+    if (event.target === imageViewer) {
+        closeImageViewer();
+    }
+
+});
+
+
+/* Close with phone back/keyboard Escape */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeImageViewer();
+    }
+
+});
+
+</script>
+  
+</body>
+
+</html>
