@@ -10,7 +10,7 @@
 import { assignSlugs } from "./_utils/slug.js";
 import { supabaseRest } from "./_utils/supabase.js";
 
-const SITE_URL = "https://hardware.pages.dev";
+const SITE_URL = "https://hardwaresikho.pages.dev";
 
 export async function onRequestGet() {
 
