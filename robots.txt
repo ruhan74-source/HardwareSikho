@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hardware.pages.dev/sitemap.xml
+Sitemap: https://hardwaresikho.pages.dev/sitemap.xml
