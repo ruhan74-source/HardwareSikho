@@ -15,6 +15,7 @@ const SITE_URL = "https://hardwaresikho.pages.dev";
 export async function onRequestGet() {
 
     let rows = [];
+    let debugError = "";
 
     try {
 
@@ -24,6 +25,7 @@ export async function onRequestGet() {
 
     } catch (error) {
         rows = [];
+        debugError = String(error && error.message ? error.message : error);
     }
 
     const { idToSlug } = assignSlugs(rows);
@@ -53,6 +55,7 @@ export async function onRequestGet() {
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<!-- DEBUG rows_count=${rows.length} error="${debugError}" -->
   <url>
     <loc>${SITE_URL}/</loc>
     <changefreq>daily</changefreq>
