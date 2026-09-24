@@ -1,3 +1,12 @@
+// Cloudflare Pages Function — handles GET /sitemap.xml
+//
+// Built dynamically from the live Supabase "images" table on every
+// request (cached briefly at the edge), so every newly uploaded image
+// shows up in the sitemap automatically — no rebuild/redeploy needed.
+// Uses the Google Images sitemap extension (image:image / image:loc /
+// image:title / image:caption) alongside the normal <url> entries so
+// each /image/<slug> page is both a regular URL and an image entry.
+
 import { assignSlugs } from "./_utils/slug.js";
 import { supabaseRest } from "./_utils/supabase.js";
 
@@ -6,7 +15,6 @@ const SITE_URL = "https://hardwaresikho.pages.dev";
 export async function onRequestGet() {
 
     let rows = [];
-    let debugError = "";
 
     try {
 
@@ -16,7 +24,6 @@ export async function onRequestGet() {
 
     } catch (error) {
         rows = [];
-        debugError = String(error && error.message ? error.message : error);
     }
 
     const { idToSlug } = assignSlugs(rows);
@@ -25,14 +32,12 @@ export async function onRequestGet() {
 
         const slug = idToSlug.get(row.id);
         const loc = `${SITE_URL}/image/${slug}`;
-        const lastmod = row.created_at ? new Date(row.created_at).toISOString() : null;
         const caption = escapeXml((row.description && row.description.trim()) || row.title || "");
         const title = escapeXml(row.title || "Hardware image");
 
         return [
             "  <url>",
             `    <loc>${escapeXml(loc)}</loc>`,
-            lastmod ? `    <lastmod>${lastmod}</lastmod>` : "",
             "    <image:image>",
             `      <image:loc>${escapeXml(row.image_url)}</image:loc>`,
             `      <image:title>${title}</image:title>`,
@@ -46,11 +51,6 @@ export async function onRequestGet() {
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<!--
-DEBUG rows_count=${rows.length}
-DEBUG error_chunks:
-${(debugError.match(/.{1,40}/g) || ["(no error)"]).join("\n")}
--->
   <url>
     <loc>${SITE_URL}/</loc>
     <changefreq>daily</changefreq>
