@@ -1,12 +1,3 @@
-// Cloudflare Pages Function — handles GET /sitemap.xml
-//
-// Built dynamically from the live Supabase "images" table on every
-// request (cached briefly at the edge), so every newly uploaded image
-// shows up in the sitemap automatically — no rebuild/redeploy needed.
-// Uses the Google Images sitemap extension (image:image / image:loc /
-// image:title / image:caption) alongside the normal <url> entries so
-// each /image/<slug> page is both a regular URL and an image entry.
-
 import { assignSlugs } from "./_utils/slug.js";
 import { supabaseRest } from "./_utils/supabase.js";
 
@@ -55,7 +46,11 @@ export async function onRequestGet() {
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<!-- DEBUG rows_count=${rows.length} error="${debugError}" -->
+<!--
+DEBUG rows_count=${rows.length}
+DEBUG error_chunks:
+${(debugError.match(/.{1,40}/g) || ["(no error)"]).join("\n")}
+-->
   <url>
     <loc>${SITE_URL}/</loc>
     <changefreq>daily</changefreq>
