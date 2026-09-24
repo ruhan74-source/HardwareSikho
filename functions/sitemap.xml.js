@@ -11,7 +11,7 @@ export async function onRequestGet() {
     try {
 
         rows = await supabaseRest(
-            "images?select=id,title,category,description,image_url,created_at&order=id.asc"
+            "images?select=id,title,category,description,image_url&order=id.asc"
         );
 
     } catch (error) {
